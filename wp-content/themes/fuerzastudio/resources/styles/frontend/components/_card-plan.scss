@@ -1,0 +1,73 @@
+.c-card-plan {
+  @include transition-theme(border-color);
+  align-items: center;
+  background-color: css-color('light');
+  border: rem(2px) solid css-color('gray-100');
+  border-radius: rem(10px);
+  display: flex;
+  flex-direction: column;
+  min-height: rem(760px);
+  padding: rem(80px) 0 rem(160px);
+  position: relative;
+  width: rem(330px);
+
+  @include media-breakpoint-up(md) {
+    &:not(:last-of-type) {
+      margin-right: rem(50px);
+    }
+  }
+
+  &:hover {
+    border-color: css-color('primary');
+  }
+
+  &__image {
+    height: rem(165px);
+    margin: 0;
+    width: rem(144px);
+
+    img {
+      @include image-size;
+    }
+  }
+
+  &__type {
+    margin: rem(30px) 0;
+  }
+
+  &__items {
+    @include list-unstyled;
+  }
+
+  &__item {
+    &:not(:last-of-type) {
+      margin-bottom: rem(10rem);
+    }
+
+    .c-icon {
+      height: rem(24px);
+      width: rem(24px);
+    }
+  }
+
+  &__footer {
+    bottom: rem(50px);
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+
+  &__price {
+    margin: 0;
+  }
+
+  &__button {
+    font-weight: font-weight('bold');
+    margin-top: rem(20px);
+
+    &:hover {
+      box-shadow: 2px 10px 25px 0 rgba(245, 56, 56, 0.35);
+    }
+  }
+}

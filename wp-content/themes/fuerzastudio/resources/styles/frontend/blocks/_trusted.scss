@@ -1,0 +1,82 @@
+.b-trusted {
+  &__title {
+    margin: 0 auto;
+    margin-bottom: rem(20px);
+    max-width: rem(447.8px);
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin: 0 auto;
+    margin-bottom: rem(60px);
+    max-width: rem(555px);
+    text-align: center;
+  }
+
+  .c-slider {
+    &__actions {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: rem(40px) rem(20px);
+      justify-content: center;
+      margin-top: rem(60px);
+
+      @include media-breakpoint-up(md) {
+        justify-content: space-between;
+      }
+    }
+
+    &__navigation {
+      display: flex;
+      gap: rem(20px);
+      position: relative;
+    }
+
+    &__button-prev,
+    &__button-next {
+      background-color: css-color('primary');
+      border: rem(2px) solid css-color('primary');
+      border-radius: 50%;
+      cursor: pointer;
+      padding: rem(18px) rem(20px);
+
+      svg {
+        fill: css-color('light');
+      }
+    }
+
+    .c-icon {
+      height: rem(17.5px);
+      width: rem(20px);
+    }
+  }
+
+  .swiper-pagination {
+    display: flex;
+    gap: rem(15px);
+  }
+
+  .swiper-pagination-bullet {
+    background-color: css-color('gray-200');
+    border-radius: 50%;
+    display: block;
+    height: rem(15px);
+    width: rem(15px);
+
+    &-active {
+      background-color: css-color('primary');
+      border-radius: rem(30px);
+      height: rem(15px);
+      width: rem(45px);
+    }
+  }
+
+  .swiper-button-disabled {
+    background-color: css-color('light');
+
+    svg {
+      fill: css-color('primary');
+    }
+  }
+}

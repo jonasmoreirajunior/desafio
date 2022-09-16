@@ -1,0 +1,23 @@
+.c-text {
+  color: css-color('dark-light');
+
+  &--small {
+    @extend %text-small;
+  }
+
+  &--normal {
+    @extend %text-normal;
+  }
+
+  &--regular {
+    @extend %text-regular;
+  }
+
+  &--medium {
+    @extend %text-medium;
+  }
+
+  &--big {
+    @extend %text-big;
+  }
+}

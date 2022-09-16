@@ -1,0 +1,14 @@
+{
+  "title": "Blocks/Form",
+  "parameters": {
+    "server": { "id": "blocks/form" }
+  },
+  "args": {
+    "form": {
+      "form": 8
+    }
+  },
+  "stories": [
+    { "name": "Default" }
+  ]
+}

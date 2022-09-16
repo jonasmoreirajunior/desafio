@@ -1,0 +1,34 @@
+/* stylelint-disable */
+/**
+ * Swiper
+ *
+ * WARNING: Import only what you need from Swiper.
+ **/
+
+
+/* ------------------------------------------------------------ *\
+  Core.
+  The swiper core.
+\* ------------------------------------------------------------ */
+@import '~swiper/swiper';
+
+/* ------------------------------------------------------------ *\
+  Modules.
+  Uncomment the modules that you'll use.
+  @see https://swiperjs.com/swiper-api#modules
+\* ------------------------------------------------------------ */
+@import '~swiper/modules/navigation/navigation';
+// @import '~swiper/modules/pagination/pagination';
+// @import '~swiper/modules/effect-cards/effect-cards';
+// @import '~swiper/modules/effect-coverflow/effect-coverflow';
+// @import '~swiper/modules/effect-creative/effect-creative';
+// @import '~swiper/modules/effect-cube/effect-cube';
+// @import '~swiper/modules/effect-fade/effect-fade';
+// @import '~swiper/modules/effect-flip/effect-flip';
+// @import '~swiper/modules/free-mode/free-mode';
+// @import '~swiper/modules/grid/grid';
+// @import '~swiper/modules/lazy/lazy';
+// @import '~swiper/modules/scrollbar/scrollbar';
+// @import '~swiper/modules/thumbs/thumbs';
+// @import '~swiper/modules/virtual/virtual';
+// @import '~swiper/modules/zoom/zoom';

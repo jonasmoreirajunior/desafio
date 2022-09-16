@@ -1,0 +1,42 @@
+{
+  "title": "Components/Button",
+  "parameters": {
+    "server": { "id": "components/button" }
+  },
+  "args": {
+    "type": "link",
+    "link": {
+      "title": "Button text",
+      "url": "https://fuerza-theme.local"
+    },
+    "style": "c-btn--primary"
+  },
+  "argTypes": {
+    "type": {
+      "options": ["link"],
+      "control": {
+        "type": "select"
+      }
+    },
+    "link": {
+      "if": { "arg": "type", "eq": "link" },
+      "control": {
+        "type": "object",
+        "title": { "control": { "type": "text" } },
+        "url": { "control": { "type": "text" } }
+      }
+    },
+    "style": {
+      "control": {
+        "type": "select"
+      },
+      "options": [
+        "c-btn--primary",
+        "c-btn--primary-o"
+      ]
+    }
+  },
+  "stories": [
+    { "name": "Default" }
+  ]
+}

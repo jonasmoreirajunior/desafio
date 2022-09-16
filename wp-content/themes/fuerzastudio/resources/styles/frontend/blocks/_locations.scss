@@ -1,0 +1,58 @@
+.b-locations {
+  &__header {
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 auto;
+    max-width: rem(383.41px);
+  }
+
+  &__subtitle {
+    margin-block: rem(20px) rem(40px);
+    margin-inline: auto;
+    max-width: rem(555px);
+
+    @include media-breakpoint-up(md) {
+      margin-block: rem(20px) rem(155px);
+    }
+  }
+
+  &__image {
+    height: auto;
+    margin: 0 auto;
+    max-width: rem(1060px);
+    width: 100%;
+
+    img {
+      @include image-size;
+      object-fit: contain;
+    }
+  }
+
+  &__companies {
+    @include list-unstyled;
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(20px) 0;
+    justify-content: center;
+    margin-top: rem(40px);
+
+    @include media-breakpoint-up(md) {
+      justify-content: space-between;
+      margin-top: rem(109px);
+    }
+  }
+
+  &__company-figure {
+    height: rem(60px);
+    margin: 0;
+    overflow: hidden;
+    width: rem(190px);
+
+    img {
+      @include image-size;
+      object-fit: none;
+    }
+  }
+}

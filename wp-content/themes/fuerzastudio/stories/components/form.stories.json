@@ -1,0 +1,19 @@
+{
+  "title": "Components/Form",
+  "parameters": {
+    "server": { "id": "components/form" }
+  },
+  "args": {
+    "form": 8
+  },
+  "argTypes": {
+    "form": {
+      "required": true,
+      "description": "The Contact Form 7 form ID",
+      "control": { "type": "number" }
+    }
+  },
+  "stories": [
+    { "name": "Default" }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Components/Slider",
+  "parameters": {
+    "server": { "id": "components/slider-example" }
+  },
+  "stories": [
+    { "name": "Default" }
+  ]
+}

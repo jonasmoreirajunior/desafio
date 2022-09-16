@@ -1,0 +1,12 @@
+.c-links {
+  @include transition-theme(color);
+  color: css-color('dark-light');
+  font-size: rem(16px);
+  font-weight: font-weight('light');
+  line-height: (30/16);
+  text-decoration: none;
+
+  &:hover {
+    color: css-color('primary');
+  }
+}

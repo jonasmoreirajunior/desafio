@@ -1,0 +1,62 @@
+@use 'sass:map';
+
+/*
+ *
+ * Header
+ *
+ */
+.c-header {
+  padding: rem(45.6px) 0 rem(88px);
+  position: relative;
+
+  &__body {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    align-items: center;
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+    }
+  }
+
+  &__login {
+    margin-left: rem(150px);
+  }
+}
+
+/**
+ *
+ * Admin Bar
+ *
+ */
+.admin-bar {
+  .c-header {
+    top: $adminbar-height-desktop;
+
+    @include admin-bar-tablet {
+      top: $adminbar-height-tablet;
+    }
+
+    @include admin-bar-mobile {
+      &.c-header--sticky {
+        top: 0;
+      }
+    }
+  }
+
+  .c-header__menu {
+    @include desktop-down {
+      top: map.get($header-height, lg) - 10;
+    }
+
+    @include desktop-up {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

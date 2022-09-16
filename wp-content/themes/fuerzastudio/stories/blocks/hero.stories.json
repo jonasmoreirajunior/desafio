@@ -1,0 +1,37 @@
+{
+  "title": "Blocks/Hero",
+  "parameters": {
+    "server": { "id": "blocks/hero" }
+  },
+  "args": {
+    "title": "Create Stunning Websites With Ease, No Code Required",
+    "text": "Join over 100k users that are building fast-loading websites with ease using Kadence Blocks! Get professional-looking results without any coding knowledge.",
+    "buttons": {
+      "buttons": [
+        {
+          "type": "link",
+          "link": {
+            "title": "Button Primary",
+            "url": "https://fuerza-theme.local"
+          },
+          "style": "c-btn--primary"
+        },
+        {
+          "type": "link",
+          "link": {
+            "title": "Primary Outline",
+            "url": "https://fuerza-theme.local"
+          },
+          "style": "c-btn--primary-o"
+        }
+      ]
+    },
+    "background": {
+      "display_background": true,
+      "image": 66
+    }
+  },
+  "stories": [
+    { "name": "Default" }
+  ]
+}

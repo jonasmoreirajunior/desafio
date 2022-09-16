@@ -1,0 +1,20 @@
+/*
+ *
+ * Menu main.
+ *
+ */
+
+.c-menu-main {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include media-breakpoint-down('md') {
+    display: block;
+  }
+
+  .menu-item {
+    &:not(:last-child) {
+      margin-right: rem(40px);
+    }
+  }
+}

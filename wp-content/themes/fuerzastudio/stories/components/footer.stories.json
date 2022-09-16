@@ -1,0 +1,9 @@
+{
+  "title": "Components/Footer",
+  "parameters": {
+    "server": { "id": "components/footer" }
+  },
+  "stories": [
+    { "name": "Default" }
+  ]
+}

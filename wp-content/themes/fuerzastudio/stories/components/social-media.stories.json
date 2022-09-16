@@ -1,0 +1,21 @@
+{
+  "title": "Components/Social Media",
+  "parameters": {
+    "server": { "id": "components/social-media" }
+  },
+  "args": {
+    "social_media": [
+      {
+        "url": "https://facebook.com",
+        "network": "facebook"
+      },
+      {
+        "url": "https://linkedin.com",
+        "network": "linkedin"
+      }
+    ]
+  },
+  "stories": [
+    { "name": "Default" }
+  ]
+}

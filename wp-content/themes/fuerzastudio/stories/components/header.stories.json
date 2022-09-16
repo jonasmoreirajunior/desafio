@@ -1,0 +1,9 @@
+{
+  "title": "Components/Header",
+  "parameters": {
+    "server": { "id": "components/header" }
+  },
+  "stories": [
+    { "name": "Default" }
+  ]
+}

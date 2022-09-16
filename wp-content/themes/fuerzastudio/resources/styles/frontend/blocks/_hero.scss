@@ -1,0 +1,30 @@
+.b-hero {
+  &__content {
+    align-self: center;
+  }
+
+  &__title {
+    margin-bottom: rem(20px);
+  }
+
+  &__text {
+    font-weight: font-weight('regular');
+    margin-bottom: rem(50px);
+  }
+
+  &__image {
+    height: auto;
+    margin-top: rem(40px);
+    max-width: rem(611px);
+    overflow: hidden;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 0;
+    }
+
+    img {
+      @include image-size;
+    }
+  }
+}

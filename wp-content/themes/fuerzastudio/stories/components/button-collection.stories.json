@@ -1,0 +1,29 @@
+{
+  "title": "Components/Button Collection",
+  "parameters": {
+    "server": { "id": "components/button-collection" }
+  },
+  "args": {
+    "buttons": [
+      {
+        "type": "link",
+        "link": {
+          "title": "Button Primary",
+          "url": "https://fuerza-theme.local"
+        },
+        "style": "c-btn--primary"
+      },
+      {
+        "type": "link",
+        "link": {
+          "title": "Primary Outline",
+          "url": "https://fuerza-theme.local"
+        },
+        "style": "c-btn--primary-o"
+      }
+    ]
+  },
+  "stories": [
+    { "name": "Default" }
+  ]
+}

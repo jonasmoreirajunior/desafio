@@ -1,0 +1,73 @@
+.c-cards-trusted {
+  align-items: center;
+  display: flex;
+
+  &__item {
+    @include transition-theme(border-color);
+    border: rem(2px) solid css-color('gray-100');
+    border-radius: rem(10px);
+    max-width: rem(400px);
+    min-height: rem(230px);
+    padding: rem(30px);
+
+    &:hover {
+      border-color: css-color('primary');
+      cursor: pointer;
+    }
+  }
+
+  &__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    .c-icon {
+      height: rem(16px);
+      margin-left: rem(11.38px);
+      width: rem(16px);
+    }
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    height: rem(50px);
+    margin: 0;
+    width: rem(50px);
+
+    img {
+      @include image-size;
+    }
+  }
+
+  &__personal {
+    margin-left: rem(20px);
+  }
+
+  &__name {
+    color: css-color('dark');
+    line-height: 1;
+    margin: 0;
+  }
+
+  &__location {
+    display: block;
+    line-height: 1;
+    margin-top: rem(5px);
+  }
+
+  &__count {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    margin-right: 0;
+
+    .c-text {
+      color: css-color('dark');
+    }
+  }
+
+  &__content {
+    color: css-color('dark');
+    margin-top: rem(20px);
+  }
+}

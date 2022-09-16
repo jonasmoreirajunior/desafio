@@ -1,0 +1,19 @@
+{
+  "title": "Components/Section Header",
+  "parameters": {
+    "server": { "id": "components/section-header" }
+  },
+  "args": {
+    "title": "Lorem ipsum simet",
+    "subtitle": "lorem ipsum dolor sit amet consectetur"
+  },
+  "stories": [
+    { "name": "Default" },
+    {
+      "name": "Section header for products list",
+      "args": {
+        "class": "b-product-list__head"
+      }
+    }
+  ]
+}

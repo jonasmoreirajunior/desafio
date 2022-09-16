@@ -1,0 +1,15 @@
+.c-title {
+  color: css-color('dark');
+
+  &--h1 {
+    @extend %title-level-1;
+  }
+
+  &--h2 {
+    @extend %title-level-2;
+  }
+
+  &--subtitle {
+    @extend %subtitle;
+  }
+}

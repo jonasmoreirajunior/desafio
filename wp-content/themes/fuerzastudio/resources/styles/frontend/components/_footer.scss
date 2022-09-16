@@ -1,0 +1,117 @@
+.c-footer {
+  background-color: css-color('gray-300');
+  margin-top: rem(80px);
+
+  @include media-breakpoint-up(lg) {
+    margin-top: rem(200px);
+  }
+
+  &__container {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-block: rem(60px) rem(60px);
+    position: relative;
+
+    @include media-breakpoint-up(lg) {
+      justify-content: space-between;
+      padding-block: rem(180px) rem(100px);
+    }
+  }
+
+  &__left {
+    max-width: rem(340px);
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+  }
+
+  &__description {
+    color: css-color('dark-light');
+    margin-block: rem(26.12px) rem(30px);
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+
+    @include media-breakpoint-up(md) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__social-link {
+    display: inline-block;
+  }
+
+  &__copyright {
+    color: css-color('gray-400');
+  }
+
+  &__right {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(40px) rem(40px);
+
+    @include media-breakpoint-up(md) {
+      gap: rem(40px) rem(126px);
+    }
+  }
+
+  &__menu {
+    @include list-unstyled();
+
+    p {
+      color: css-color('dark');
+      margin-bottom: rem(20px);
+    }
+  }
+
+  &__menu-link {
+    &:not(:first-of-type) {
+      margin-top: rem(10px);
+    }
+  }
+
+  &__subscribe {
+    align-items: center;
+    background-color: css-color('light');
+    border-radius: rem(10px);
+    box-shadow: 0 10px 55px -30px #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: rem(50px);
+    max-width: rem(1290px);
+    padding: rem(30px) rem(10px);
+    width: 100%;
+
+    @include media-breakpoint-up(lg) {
+      justify-content: space-between;
+      left: 50%;
+      margin-bottom: 0;
+      padding: rem(40px) rem(70px);
+      position: absolute;
+      top: -50%;
+      transform: translate(-50%, 60%);
+    }
+  }
+
+  &__subscribe-left {
+    max-width: rem(371.61px);
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+    }
+  }
+
+  &__subscribe-subtitle {
+    margin: 0;
+    margin-top: rem(20px);
+  }
+}

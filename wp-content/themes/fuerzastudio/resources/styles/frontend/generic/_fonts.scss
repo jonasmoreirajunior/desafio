@@ -1,0 +1,32 @@
+/* ------------------------------------------------------------ *\
+  Fonts.
+  Add your custom fonts here. You can use a tool to convert your
+  fonts in to web format (woff, woff2). To do it you can use
+  https://transfonter.org
+\* ------------------------------------------------------------ */
+@font-face {
+  font-display: swap;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: url('~@fonts/rubik/Rubik-Regular.woff2') format('woff2'),
+    url('~@fonts/rubik/Rubik-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: url('~@fonts/rubik/Rubik-Medium.woff2') format('woff2'),
+    url('~@fonts/rubik/Rubik-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  src: url('~@fonts/rubik/Rubik-Bold.woff2') format('woff2'),
+    url('~@fonts/rubik/Rubik-Bold.woff') format('woff');
+}
